@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
+import AboutUsView from './views/AboutUsView'
+import BecomePetParentView from './views/BecomePetParentView'
+import ResultsView from './views/ResultsView'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+import './styles/normalizer.css'
+import './styles/fonts.css'
+import './styles/theme.css'
+import './styles/reset.css'
+import './styles/general.css'
+import './styles/visually-hidden.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App page">
+                <Header />
+
+                <main className="page-content">
+                    <Routes>
+                        <Route path="/" element={<AboutUsView />} />
+                        <Route path="/become-pet-parent" element={<BecomePetParentView />} />
+                        <Route path="/results" element={<ResultsView />} />
+                    </Routes>
+                </main>
+
+                <Footer />
+            </div>
+        </Router>
+    )
 }
 
-export default App;
+export default App

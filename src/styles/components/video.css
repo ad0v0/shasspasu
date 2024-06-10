@@ -1,0 +1,26 @@
+.video {
+    width: 877px;
+    height: 480px;
+    margin: 40px auto 80px;
+
+    text-align: center;
+}
+
+.video-preview {
+    position: relative;
+    width: 877px;
+    height: 480px;
+
+    border-radius: 16px;
+}
+
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    opacity: 0.6;
+}

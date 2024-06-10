@@ -1,0 +1,65 @@
+
+.page-header {
+    padding: 20px 80px 20px 80px;
+}
+
+.page-header-wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-logo-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.site-navigation ul {
+    display: flex;
+}
+
+.site-navigation li {
+    margin-right: 48px
+}
+
+.site-navigation a:hover {
+    opacity: 0.85;
+    transition: 0.25s ease;
+}
+
+.page-header-action {
+    display: flex;
+    align-items: center;
+}
+
+.page-header-action .button-support {
+    margin-right: 12px;
+    padding: 20px;
+    padding-left: 50px;
+
+    font-weight: 500;
+
+    border-radius: 48px;
+    background-color: var(--button-primary);
+    background-image: url("../icons/icon-paw.svg");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 20px;
+}
+
+.page-header-action .button-language-switch {
+    padding: 19px;
+
+    border-radius: 100%;
+    background-color: var(--button-secondary);
+}
+
+.page-header-action .button:hover {
+    opacity: 0.85;
+    transition: 0.25s ease;
+}

@@ -1,0 +1,46 @@
+.intro {
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.intro .intro-title {
+    margin-bottom: 10px;
+
+    font-size: 80px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -3.2px;
+    color: var(--text-dark);
+}
+
+.intro .intro-title-results {
+    margin-bottom: 40px;
+}
+
+.intro-title .text-accent {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -5.6px;
+}
+
+.intro .intro-description {
+    margin: 0 auto;
+
+    line-height: 1.39;
+    color: var(--text-dark);
+}
+
+.intro-description svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.intro .intro-description span {
+    font-style: italic;
+}
+
+.intro .intro-description a span {
+    text-decoration: underline;
+}

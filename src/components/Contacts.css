@@ -1,0 +1,55 @@
+.contacts {
+    margin-bottom: 80px;
+    padding: 32px 60px;
+
+    text-align: center;
+}
+
+.contacts .contacts-title {
+    margin: 0 auto 24px;
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.04;
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+.contacts .contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+    margin: 0 auto;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-list li p {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    color: var(--text-primary);
+}
+
+.contact-list li:not(:last-child) span {
+    font-weight: 700;
+}
+
+.contact-list li:last-child a {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.contact-list a:hover {
+    opacity: 0.85;
+    transition: 0.25s ease;
+}
+

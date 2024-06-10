@@ -1,0 +1,46 @@
+/* Balsamiq Sans */
+@font-face {
+    font-family: 'Balsamiq Sans';
+    src: url('../fonts/balsamiq-sans/BalsamiqSans-Regular.woff2') format('woff2'),
+    url('../fonts/balsamiq-sans/BalsamiqSans-Regular.woff') format('woff'),
+    url('../fonts/balsamiq-sans/BalsamiqSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Balsamiq Sans';
+    src: url('../fonts/balsamiq-sans/BalsamiqSans-Bold.woff2') format('woff2'),
+    url('../fonts/balsamiq-sans/BalsamiqSans-Bold.woff') format('woff'),
+    url('../fonts/balsamiq-sans/BalsamiqSans-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Mariupol */
+@font-face {
+    font-family: 'Mariupol';
+    src: url('../fonts/mariupol/Mariupol-Regular.woff2') format('woff2'),
+    url('../fonts/mariupol/Mariupol-Regular.woff') format('woff'),
+    url('../fonts/mariupol/Mariupol-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: url('../fonts/mariupol/Mariupol-Medium.woff2') format('woff2'),
+    url('../fonts/mariupol/Mariupol-Medium.woff') format('woff'),
+    url('../fonts/mariupol/Mariupol-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: url('../fonts/mariupol/Mariupol-Bold.woff2') format('woff2'),
+    url('../fonts/mariupol/Mariupol-Bold.woff') format('woff'),
+    url('../fonts/mariupol/Mariupol-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
