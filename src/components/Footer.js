@@ -27,7 +27,12 @@ const FooterComponent = () => {
 
                 <ul className="reset-list social">
                     <li>
-                        <a href="https://www.instagram.com/shasspasu/" target="_blank" rel="noreferrer nofollow">
+                        <a
+                            href="https://www.instagram.com/shasspasu/"
+                            target="_blank"
+                            rel="noreferrer nofollow"
+                            aria-label={`${t('footer.social.instagram')}. ${t('footer.socialTooltip')}`}
+                        >
                             <span className="visually-hidden">Instagram</span>
                             <IconInsta />
                         </a>
@@ -35,7 +40,12 @@ const FooterComponent = () => {
                         <div className="tooltip">{t('footer.socialTooltip')}</div>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/shasspasu/" target="_blank" rel="noreferrer nofollow">
+                        <a
+                            href="https://www.facebook.com/shasspasu/"
+                            target="_blank"
+                            rel="noreferrer nofollow"
+                            aria-label={`${t('footer.social.facebook')}. ${t('footer.socialTooltip')}`}
+                        >
                             <span className="visually-hidden">Facebook</span>
                             <IconFacebook />
                         </a>
@@ -44,7 +54,7 @@ const FooterComponent = () => {
                     </li>
                 </ul>
 
-                <button className="reset-button button button-scroll-to-top" onClick={scrollToTop}>
+                <button className="reset-button button button-scroll-to-top" type="button" onClick={scrollToTop}>
                     <span className="visually-hidden">{t('footer.scrollToTop')}</span>
                 </button>
             </div>

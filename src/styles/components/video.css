@@ -8,11 +8,18 @@
 
 .video-preview {
     position: relative;
+    display: block;
     width: 100%;
     aspect-ratio: 877 / 480;
 
     border-radius: 16px;
     overflow: hidden;
+}
+
+.video-preview-button {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
 }
 
 .video-thumbnail,
@@ -29,11 +36,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     transform: translate(-50%, -50%);
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
     opacity: 0.6;
+}
+
+.video-preview-button:hover .video-play-button,
+.video-preview-button:focus-visible .video-play-button {
+    opacity: 0.85;
 }
 
 @media (max-width: 1024px) {

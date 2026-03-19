@@ -58,6 +58,10 @@
     transition: 0.25s ease;
 }
 
+.contact-list a:focus-visible {
+    opacity: 1;
+}
+
 .contact-list .contact-link-disabled {
     cursor: not-allowed;
     color: inherit;
@@ -67,6 +71,10 @@
 }
 
 .contact-list .contact-link-disabled:hover {
+    opacity: 0.5;
+}
+
+.contact-list .contact-link-disabled:focus-visible {
     opacity: 0.5;
 }
 

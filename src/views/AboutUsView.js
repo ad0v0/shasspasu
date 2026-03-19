@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 
 import '../styles/components/intro.css'
@@ -12,12 +12,19 @@ const AboutUsView = () => {
     const { t } = useTranslation()
 
     const [isVideoPlaying, setIsVideoPlaying] = useState(false)
+    const videoRef = useRef(null)
 
     const handleVideoPlay = () => {
         setIsVideoPlaying(true)
-        const video = document.getElementById('intro-video')
-        video.play()
     }
+
+    useEffect(() => {
+        if (!isVideoPlaying || !videoRef.current) {
+            return
+        }
+
+        videoRef.current.play().catch(() => {})
+    }, [isVideoPlaying])
 
     return (
         <div className="container page-content-wrapper">
@@ -43,18 +50,24 @@ const AboutUsView = () => {
                 </h2>
 
                 {!isVideoPlaying && (
-                    <div className="video-preview" onClick={handleVideoPlay}>
-                        <img src={VideoPreview} width="877" height="480" alt="." className="video-thumbnail" />
-                        <button className="reset-button video-play-button">
-                            <span className="visually-hidden">
-                                {t('aboutUs.video.button')}
+                    <button
+                        type="button"
+                        className="reset-button video-preview-button"
+                        onClick={handleVideoPlay}
+                        aria-label={t('aboutUs.video.button')}
+                        aria-controls="intro-video"
+                    >
+                        <span className="video-preview">
+                            <img src={VideoPreview} width="877" height="480" alt="" className="video-thumbnail" />
+                            <span className="video-play-button" aria-hidden="true">
+                                <IconPlay />
                             </span>
-                            <IconPlay />
-                        </button>
-                    </div>
+                        </span>
+                    </button>
                 )}
                 <video
                     id="intro-video"
+                    ref={videoRef}
                     className="intro-video"
                     src={Video}
                     controls

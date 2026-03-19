@@ -35,6 +35,10 @@
     transition: 0.25s ease;
 }
 
+.site-navigation a:focus-visible {
+    opacity: 1;
+}
+
 .page-header-action {
     display: flex;
     align-items: center;
@@ -65,6 +69,10 @@
 .page-header-action .button:hover {
     opacity: 0.85;
     transition: 0.25s ease;
+}
+
+.page-header-action .button:focus-visible {
+    opacity: 1;
 }
 
 .page-header-action .button-support:disabled {

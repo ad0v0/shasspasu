@@ -85,7 +85,7 @@ const BecomePetParentView = () => {
                 </div>
 
                 <div className="pet-parent-image-wrapper">
-                    <img src={BecomePetParentImage} width="374" height="auto" alt="." />
+                    <img src={BecomePetParentImage} width="374" height="auto" alt="" />
 
                     <div className="pet-parent-description-wrapper">
                         <p className="reset-text">
@@ -114,7 +114,7 @@ const BecomePetParentView = () => {
 
             <section className="adoption-process">
                 <div className="adoption-process-image-wrapper">
-                    <img src={AdoptionProcessImage} width="368" height="auto" alt="." />
+                    <img src={AdoptionProcessImage} width="368" height="auto" alt="" />
                 </div>
 
                 <div className="adoption-process-text-wrapper">

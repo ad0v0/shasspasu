@@ -39,10 +39,11 @@
 }
 
 .page-footer .social a {
-    display: inline-block;
+    display: inline-flex;
 }
 
-.page-footer .social a:hover + .tooltip {
+.page-footer .social li:hover .tooltip,
+.page-footer .social li:focus-within .tooltip {
     visibility: visible;
 }
 

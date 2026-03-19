@@ -7,10 +7,14 @@ export function SliderNextButton(props) {
     const { className, onClick } = props
 
     return (
-        <IconSliderNext
+        <button
+            type="button"
             className={className}
             onClick={onClick}
-        />
+            aria-label="Next slide"
+        >
+            <IconSliderNext aria-hidden="true" focusable="false" />
+        </button>
     )
 }
 
@@ -18,9 +22,13 @@ export function SliderPrevButton(props) {
     const { className, onClick } = props
 
     return (
-        <IconSliderPrev
+        <button
+            type="button"
             className={className}
             onClick={onClick}
-        />
+            aria-label="Previous slide"
+        >
+            <IconSliderPrev aria-hidden="true" focusable="false" />
+        </button>
     )
 }

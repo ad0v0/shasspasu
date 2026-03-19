@@ -89,34 +89,34 @@ const ResultsView = () => {
             <div className="slider slider-container">
                 <Slider {...settings}>
                     <div className="slider-item">
-                        <img src={SliderImage01} className="slider-image" alt="." />
+                        <img src={SliderImage01} className="slider-image" alt="" />
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage02} className="slider-image" alt="."/>
+                        <img src={SliderImage02} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage03} className="slider-image" alt="."/>
+                        <img src={SliderImage03} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage04} className="slider-image" alt="." />
+                        <img src={SliderImage04} className="slider-image" alt="" />
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage05} className="slider-image" alt="."/>
+                        <img src={SliderImage05} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage06} className="slider-image" alt="."/>
+                        <img src={SliderImage06} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage07} className="slider-image" alt="." />
+                        <img src={SliderImage07} className="slider-image" alt="" />
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage08} className="slider-image" alt="."/>
+                        <img src={SliderImage08} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage09} className="slider-image" alt="."/>
+                        <img src={SliderImage09} className="slider-image" alt=""/>
                     </div>
                     <div className="slider-item">
-                        <img src={SliderImage10} className="slider-image" alt="."/>
+                        <img src={SliderImage10} className="slider-image" alt=""/>
                     </div>
                 </Slider>
             </div>

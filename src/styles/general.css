@@ -23,6 +23,16 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--button-primary);
+    outline-offset: 4px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
 .page {
     display: flex;
     flex-direction: column;
