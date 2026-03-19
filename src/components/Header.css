@@ -63,3 +63,12 @@
     opacity: 0.85;
     transition: 0.25s ease;
 }
+
+.page-header-action .button-support:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.page-header-action .button-support:disabled:hover {
+    opacity: 0.5;
+}

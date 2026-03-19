@@ -53,3 +53,14 @@
     transition: 0.25s ease;
 }
 
+.contact-list .contact-link-disabled {
+    cursor: not-allowed;
+    color: inherit;
+    font-weight: 400;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.contact-list .contact-link-disabled:hover {
+    opacity: 0.5;
+}

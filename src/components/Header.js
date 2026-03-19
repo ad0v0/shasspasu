@@ -46,11 +46,11 @@ const HeaderComponent = () => {
                 </Link>
 
                 <div className="page-header-action">
-                    <button className="reset-button button button-support">
+                    <button className="reset-button button button-support" type="button" disabled aria-disabled="true">
                         {t('header.support')}
                     </button>
 
-                    <button className="reset-button button button-language-switch" onClick={handleLanguageChange}>
+                    <button className="reset-button button button-language-switch" type="button" onClick={handleLanguageChange}>
                         {currentLanguage === 'en' ? 'UA' : 'EN'}
                     </button>
                 </div>

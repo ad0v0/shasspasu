@@ -2,22 +2,6 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-// TODO
-// General:
-// - Content: check english version of shasspasu
-// - Lena (designer) requires a discussion on one more page
-// - Design and implement support page
-// - Design and implement mobile version
-// - Meta information / favicon etc
-// - Buy domain name etc / set up / upload
-// - Test live version
-// About us view:
-// - Design: get preview image for the video
-// Results view:
-// - Slider / change images to contain only image without text
-// Contacts section:
-// - Form: requires a link
-
 const resources = {
     en: {
         translation: {
@@ -32,10 +16,10 @@ const resources = {
             "footer": {
                 "socialTooltip": "To contact us, please send a direct message",
                 "social": {
-                    "instagram": "Інстаграм",
-                    "facebook": "Фейсбук"
+                    "instagram": "Instagram",
+                    "facebook": "Facebook"
                 },
-                "scrollToTop": "Скролити до верху"
+                "scrollToTop": "Scroll to top"
             },
             "contacts": {
                 "title": "To become a PetParent -<br /> contact the curators of the project:",
@@ -59,7 +43,7 @@ const resources = {
                 },
                 "aboutUsSection": {
                     "title": "#About us",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "description": "Shchas Spasu is a volunteer initiative that rescues abandoned and injured animals, gives them shelter, treatment, and daily care, and helps them move from crisis to a safe life in a family. We work thanks to the dedication of curators, volunteers, and people who choose adoption, temporary care, or support for the center."
                 }
             },
             "becomePetParent": {
@@ -73,11 +57,11 @@ const resources = {
                         "attitude": "Will treat their pet with care and love",
                         "feeding": "Will feed their pet with high-quality food",
                         "treatment": "Will vaccinate and treat their pet against parasites in a timely manner",
-                        "health": "Will heal their pet in a time if necessary",
-                        "care": "Will not let their pet out on its own and will take care of the per's safety"
+                        "health": "Will seek treatment in time when their pet needs medical help",
+                        "care": "Will not let their pet roam freely and will take care of the pet's safety"
                     },
                     "description": {
-                        "text": "All fluffy children that are looking for the family are in our",
+                        "text": "All fluffy children looking for a family are featured on our",
                         "link": "<instagramLink><iconInstagram /><span>instagram</span></instagramLink>"
                     }
                 },
@@ -96,12 +80,12 @@ const resources = {
                     "title": "<span>#Results</span>",
                     "description":
                         "Up to <span>200 fluffy children</span> are under the care of volunteers from <span>#ЩасСпасу</span> at once <heartIcon/> <br/>" +
-                        "Up to <span>100</span> of them live on the territory of the <span>Center for animals #ЩасСпасу</span> <br />" +
-                        "and the rest of them - in other locations in Kyiv and the region." +
+                        "Up to <span>100</span> of them live on the grounds of the <span>#ЩасСпасу animal center</span> <br />" +
+                        "and the rest stay in other locations across Kyiv and the region." +
                         "<br /> <br />" +
                         "Since <span>2020</span>, we have found loving families for <span>320 cats and dogs</span> <br/>" +
                         "And we don't stop! If you are also ready to bring a fluffy child to your family <br />" +
-                        "visit us at" +
+                        "visit us on " +
                         "<instagramLink><iconInstagram /><span>instagram</span></instagramLink> " +
                         "and choose a friend."
                 },
@@ -148,7 +132,7 @@ const resources = {
                 },
                 "aboutUsSection": {
                     "title": "#Про нас",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "description": "Щас Спасу - це волонтерська ініціатива, яка рятує покинутих і травмованих тварин, забезпечує їм прихисток, лікування та щоденний догляд, а потім допомагає перейти від кризи до безпечного життя в родині. Ми працюємо завдяки кураторам, волонтерам і людям, які обирають адопцію, тимчасову опіку або підтримку центру."
                 }
             },
             "becomePetParent": {

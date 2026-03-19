@@ -41,9 +41,14 @@ const Contacts = () => {
                         <span>
                             {t('contacts.form.text')}&nbsp;
                         </span>
-                        <a href="#" className="text-accent">
+                        <button
+                            type="button"
+                            className="reset-button text-accent contact-link-disabled"
+                            disabled
+                            aria-disabled="true"
+                        >
                             {t('contacts.form.link')}
-                        </a>
+                        </button>
                     </p>
                 </li>
             </ul>
