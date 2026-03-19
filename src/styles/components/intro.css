@@ -27,6 +27,7 @@
 
 .intro .intro-description {
     margin: 0 auto;
+    max-width: 860px;
 
     line-height: 1.39;
     color: var(--text-dark);
@@ -43,4 +44,49 @@
 
 .intro .intro-description a span {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        margin-top: 40px;
+    }
+
+    .intro .intro-title {
+        font-size: 64px;
+        letter-spacing: -2px;
+    }
+
+    .intro-title .text-accent {
+        letter-spacing: -3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro .intro-title {
+        font-size: 48px;
+    }
+
+    .intro .intro-title-results {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        margin-top: 32px;
+    }
+
+    .intro .intro-title {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .intro-title .text-accent {
+        letter-spacing: -1.6px;
+    }
+
+    .intro .intro-description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }

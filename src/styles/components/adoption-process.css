@@ -1,6 +1,8 @@
 .adoption-process {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+    gap: 56px;
     margin-top: 120px;
     margin-bottom: 138px;
 
@@ -8,7 +10,21 @@
 }
 
 .adoption-process-image-wrapper {
-    margin-right: 72px;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 368px;
+}
+
+.adoption-process-image-wrapper img {
+    display: block;
+    width: 100%;
+}
+
+.adoption-process-text-wrapper {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    max-width: 680px;
 }
 
 .adoption-process .adoption-process-title {
@@ -26,6 +42,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .adoption-process-list li {
@@ -33,7 +50,7 @@
 
     display: flex;
     align-items: center;
-    width: 680px;
+    width: 100%;
     padding: 10px 16px;
     border-radius: 12px;
     box-shadow:
@@ -51,4 +68,46 @@
     margin-left: 16px;
 
     text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .adoption-process {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        margin-top: 96px;
+        margin-bottom: 110px;
+    }
+
+    .adoption-process-image-wrapper,
+    .adoption-process-text-wrapper {
+        max-width: 680px;
+    }
+
+    .adoption-process .adoption-process-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .adoption-process {
+        gap: 28px;
+        margin-top: 72px;
+        margin-bottom: 80px;
+    }
+
+    .adoption-process .adoption-process-title {
+        font-size: 22px;
+    }
+
+    .adoption-process-list li {
+        align-items: flex-start;
+        padding: 14px;
+    }
+
+    .adoption-process-list p {
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
 }

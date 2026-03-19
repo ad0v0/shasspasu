@@ -1,13 +1,18 @@
 .pet-parent {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+    gap: 48px;
     margin-top: 80px;
 
     text-align: center;
 }
 
 .pet-parent-text-wrapper {
-    margin-right: 60px;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    max-width: 680px;
 }
 
 .pet-parent .pet-parent-title {
@@ -25,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .pet-parent-list li {
@@ -32,7 +38,7 @@
 
     display: flex;
     align-items: center;
-    width: 680px;
+    width: 100%;
     padding: 10px 16px;
     border-radius: 12px;
     box-shadow:
@@ -50,8 +56,16 @@
 
 .pet-parent-image-wrapper {
     position: relative;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 374px;
 
     margin-top: 25px;
+}
+
+.pet-parent-image-wrapper img {
+    display: block;
+    width: 100%;
 }
 
 .pet-parent-description-wrapper {
@@ -80,4 +94,54 @@
     margin-left: 4px;
 
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .pet-parent {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        margin-top: 64px;
+    }
+
+    .pet-parent-text-wrapper,
+    .pet-parent-image-wrapper {
+        max-width: 680px;
+    }
+
+    .pet-parent .pet-parent-title {
+        text-align: center;
+    }
+
+    .pet-parent-image-wrapper {
+        margin-top: 0;
+    }
+
+    .pet-parent-description-wrapper {
+        position: static;
+        width: min(100%, 293px);
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .pet-parent {
+        margin-top: 48px;
+        gap: 28px;
+    }
+
+    .pet-parent .pet-parent-title {
+        font-size: 22px;
+    }
+
+    .pet-parent-list li {
+        align-items: flex-start;
+        padding: 14px;
+    }
+
+    .pet-parent-list p {
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
 }

@@ -55,3 +55,72 @@
     background-position: bottom center;
     background-size: 100%;
 }
+
+@media (max-width: 1024px) {
+    .page-footer {
+        padding: 72px 40px 32px;
+    }
+
+    .page-footer-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 40px;
+    }
+
+    .page-footer .social {
+        transform: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-footer {
+        padding: 56px 20px 24px;
+        background-size: cover;
+    }
+
+    .page-footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .page-footer .copyright {
+        max-width: 280px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .page-footer .social {
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .page-footer .social li {
+        width: 52px;
+        height: 52px;
+        margin-right: 0;
+    }
+
+    .page-footer .social li:last-child {
+        margin-right: 0;
+    }
+
+    .page-footer .social a svg,
+    .page-footer .button-scroll-to-top {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-footer {
+        padding-top: 48px;
+    }
+
+    .page-footer .copyright {
+        max-width: 240px;
+        font-size: 15px;
+    }
+}

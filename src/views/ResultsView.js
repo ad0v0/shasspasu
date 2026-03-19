@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTranslation, Trans } from 'react-i18next'
+import { Trans } from 'react-i18next'
 import Slider from 'react-slick'
 
 import '../styles/components/pet-parent.css'
@@ -21,19 +21,36 @@ import SliderImage10 from '../assets/images/image-pets-10.jpg'
 import { SliderPrevButton, SliderNextButton } from '../components/Slider'
 
 const ResultsView = () => {
-    const { t } = useTranslation()
-
     const settings = {
         dots: false,
         infinite: true,
-        className: "center",
-        centerMode: true,
-        slidesToShow: 3.8,
+        slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true,
         speed: 500,
         nextArrow: <SliderNextButton />,
-        prevArrow: <SliderPrevButton />
+        prevArrow: <SliderPrevButton />,
+        responsive: [
+            {
+                breakpoint: 1180,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+        ]
     }
 
     return (
@@ -71,35 +88,35 @@ const ResultsView = () => {
 
             <div className="slider slider-container">
                 <Slider {...settings}>
-                    <div style={{'padding': '5px'}}>
-                        <img src={SliderImage01} width="340px" height="auto" alt="." />
+                    <div className="slider-item">
+                        <img src={SliderImage01} className="slider-image" alt="." />
                     </div>
-                    <div>
-                        <img src={SliderImage02} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage02} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage03} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage03} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage04} width="340px" height="auto" alt="." />
+                    <div className="slider-item">
+                        <img src={SliderImage04} className="slider-image" alt="." />
                     </div>
-                    <div>
-                        <img src={SliderImage05} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage05} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage06} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage06} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage07} width="340px" height="auto" alt="." />
+                    <div className="slider-item">
+                        <img src={SliderImage07} className="slider-image" alt="." />
                     </div>
-                    <div>
-                        <img src={SliderImage08} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage08} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage09} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage09} className="slider-image" alt="."/>
                     </div>
-                    <div>
-                        <img src={SliderImage10} width="340px" height="auto" alt="."/>
+                    <div className="slider-item">
+                        <img src={SliderImage10} className="slider-image" alt="."/>
                     </div>
                 </Slider>
             </div>

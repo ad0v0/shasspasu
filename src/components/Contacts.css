@@ -17,21 +17,26 @@
 
 .contacts .contact-list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: 88px;
+    flex-wrap: wrap;
+    gap: 24px 40px;
     margin: 0 auto;
 }
 
 .contact-list li {
     display: flex;
     align-items: center;
+    flex: 1 1 280px;
+    max-width: 360px;
     margin: 10px 0;
 }
 
 .contact-list li p {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 0;
     margin-left: 16px;
 
     font-size: 18px;
@@ -63,4 +68,40 @@
 
 .contact-list .contact-link-disabled:hover {
     opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        padding: 24px 0;
+    }
+
+    .contacts .contact-list {
+        gap: 20px;
+    }
+
+    .contact-list li {
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .contacts {
+        margin-bottom: 64px;
+    }
+
+    .contacts .contacts-title {
+        font-size: 22px;
+    }
+
+    .contact-list li {
+        align-items: flex-start;
+        flex: 1 1 100%;
+    }
+
+    .contact-list li p {
+        margin-left: 12px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+    }
 }

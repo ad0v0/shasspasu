@@ -2,7 +2,21 @@
     position: relative;
 
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
+}
+
+.slider .slick-list {
+    margin: 0 -8px;
+}
+
+.slider .slick-slide > div {
+    padding: 0 8px;
+}
+
+.slider .slider-image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .slider .slick-arrow {
@@ -19,4 +33,26 @@
 
 .slider .slick-prev {
     left: calc(50% - 60px); /* spacing + size */
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        margin-top: 64px;
+        margin-bottom: 108px;
+    }
+}
+
+@media (max-width: 640px) {
+    .slider {
+        margin-top: 48px;
+        margin-bottom: 64px;
+    }
+
+    .slider .slick-list {
+        margin: 0 -4px;
+    }
+
+    .slider .slick-slide > div {
+        padding: 0 4px;
+    }
 }

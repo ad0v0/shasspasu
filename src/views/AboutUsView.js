@@ -58,7 +58,7 @@ const AboutUsView = () => {
                     className="intro-video"
                     src={Video}
                     controls
-                    style={{ width: '877px', height: '480px', display: isVideoPlaying ? 'block' : 'none' }}
+                    style={{ display: isVideoPlaying ? 'block' : 'none' }}
                 />
             </article>
 
