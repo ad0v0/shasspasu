@@ -189,6 +189,13 @@ i18n
     .init({
         resources,
         fallbackLng: 'en',
+        supportedLngs: ['en', 'ua'],
+        nonExplicitSupportedLngs: true,
+        detection: {
+            order: ['localStorage', 'navigator', 'htmlTag', 'cookie'],
+            caches: ['localStorage'],
+            lookupLocalStorage: 'i18nextLng'
+        },
         interpolation: {
             escapeValue: false
         }

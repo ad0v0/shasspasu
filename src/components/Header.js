@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 import './Header.css'
@@ -8,20 +8,9 @@ import Logo from '../icons/logo.svg'
 const HeaderComponent = () => {
     const { t, i18n } = useTranslation()
 
-    const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'ua')
-
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng)
-    }
-
     const handleLanguageChange = () => {
-        if (currentLanguage === 'en') {
-            changeLanguage('ua')
-            setCurrentLanguage('ua')
-        } else {
-            changeLanguage('en')
-            setCurrentLanguage('en')
-        }
+        const nextLanguage = i18n.resolvedLanguage === 'ua' ? 'en' : 'ua'
+        i18n.changeLanguage(nextLanguage)
     }
 
     return (
@@ -51,7 +40,7 @@ const HeaderComponent = () => {
                     </button>
 
                     <button className="reset-button button button-language-switch" type="button" onClick={handleLanguageChange}>
-                        {currentLanguage === 'en' ? 'UA' : 'EN'}
+                        {i18n.resolvedLanguage === 'en' ? 'UA' : 'EN'}
                     </button>
                 </div>
             </div>

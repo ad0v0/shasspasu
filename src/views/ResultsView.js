@@ -1,5 +1,5 @@
 import React from 'react'
-import { Trans } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 import '../styles/components/pet-parent.css'
@@ -21,6 +21,8 @@ import SliderImage10 from '../assets/images/image-pets-10.jpg'
 import { SliderPrevButton, SliderNextButton } from '../components/Slider'
 
 const ResultsView = () => {
+    useTranslation()
+
     const settings = {
         dots: false,
         infinite: true,
